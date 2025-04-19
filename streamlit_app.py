@@ -27,7 +27,6 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
-
 def diagnosticar_diabetes(edad, imc, glucosa, presion, actividad, antecedentes):
     riesgo = 0
     if edad > 45: riesgo += 1
