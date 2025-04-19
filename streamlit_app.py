@@ -5,20 +5,6 @@ st.set_page_config(page_title="Diagnóstico de Diabetes", page_icon="🩺", layo
 st.title("🩺 Sistema de Diagnóstico de Diabetes Tipo 2")
 st.markdown("Este sistema estima el **riesgo de diabetes** basado en factores clínicos. No reemplaza la consulta médica.")
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6803d02e485a86191013bcde/1ip7eadrt';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
 # Entradas del usuario
 edad = st.number_input("Edad", min_value=0, max_value=120, step=1)
 imc = st.number_input("IMC (Índice de Masa Corporal)", min_value=10.0, max_value=50.0, step=0.1)
@@ -50,3 +36,17 @@ if st.button("Evaluar riesgo"):
     nivel, mensaje = diagnosticar_diabetes(edad, imc, glucosa, presion, actividad, antecedentes)
     st.subheader(f"Resultado: {nivel}")
     st.info(mensaje)
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6803d02e485a86191013bcde/1ip7eadrt';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
